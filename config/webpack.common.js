@@ -26,8 +26,8 @@ const ngcWebpack = require('ngc-webpack');
 const HMR = helpers.hasProcessFlag('hot');
 const AOT = helpers.hasNpmFlag('aot');
 const METADATA = {
-    title: 'Angular2 Webpack Starter by @Omar Ortiz',
-    baseUrl: '/',
+    title: 'Welcome to SDS',
+    baseUrl: '/sds',
     isDevServer: helpers.isWebpackDevServer()
 };
 
@@ -314,6 +314,13 @@ module.exports = function (options) {
              */
             new HtmlElementsPlugin({
                 headTags: require('./head-config.common')
+            }),
+
+            new webpack.ProvidePlugin({
+                jQuery: 'jquery',
+                $: 'jquery',
+                'window.jQuery': 'jquery',
+                'Tether': 'tether'
             }),
 
             /**

@@ -1,0 +1,17 @@
+<div class="modal-header">
+    <h3 class="modal-title">About</h3>
+</div>
+<div class="modal-body">
+    <p>
+        The Supplier Documentation System is used to distribute documentation and related ASIC information 
+        to Company's Supplier Partners.
+    </p>
+    <span><b>App Name:</b> {{applicationData.appname}}</span><br>
+    <span><b>Version:</b></span> {{applicationData.appversion}}<br>
+    <span><b>Environment:</b></span> {{applicationData.environment}}<br>
+    <span><b>Build Number:</b></span> {{buildData.version}}<br>
+    <span><b>Build Date:</b></span> {{buildData.buildDate}}<br>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" type="button" (click)="activeModal.close('Close click')">Close</button>
+</div>

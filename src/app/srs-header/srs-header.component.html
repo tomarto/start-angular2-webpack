@@ -1,0 +1,46 @@
+<div id="srs-header" [className]="srsHeaderClass">
+    <div class="company-logo"></div>
+    <div class="srs-header-app-links">
+        <ul>
+            <li id="{{app.appName}}" class="srs-app-item" *ngFor="let app of apps"
+                    [ngClass]="{'srs-current-app-item': app.current}">
+                <a *ngIf="!app.current" href="{{app.url}}" (click)="appTransition()">{{app.appName}}</a>
+                <a *ngIf="app.current" routerLink="/search">{{app.appName}}</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="srs-credential-header">
+        <span>
+            Welcome<br />{{loggedUser.firstName}} {{loggedUser.lastName}}
+        </span>
+    </div>
+
+    <div class="header-help">
+        <ul>
+            <li class="dropdown">
+                <a href="#" id="help-menu" class="dropdown-toggle help-menu" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+                    <span> Help </span>&nbsp;<b class="caret"></b>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="help-menu">
+                    <a class="dropdown-item" href="#">
+                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                        <span> User Documentation</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                        <span> Request Assistance</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#" (click)="openAboutModal()">
+                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                        <span> About</span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

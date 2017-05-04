@@ -1,0 +1,128 @@
+.non-prod {
+    background-color: #FFC0CB;
+    height: 50px;
+    padding-left: 15px;
+}
+
+.srs-header {
+    background-color: #000;
+    height: 50px;
+    padding-left: 15px;
+}
+
+.company-logo {
+    float: left;
+    width: 130px;
+    height: 50px;
+    background: url(/assets/img/logo.png) no-repeat;
+}
+
+.srs-header-app-links {
+    float: left;
+    height: 50px;
+    padding-left: 30px;
+}
+
+.srs-app-item {
+    height: 50px;
+    color: #7bc4ff;
+    font-size: 25px;
+    padding-top: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline-block;
+}
+
+.srs-app-item:hover {
+    background-color: #5bc0de;
+}
+
+.srs-app-item a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.srs-app-item a {
+    color: #fff !important;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+
+.srs-app-item:hover {
+    /* Inverse of the chosen item. Radial from inside out instead of outside in */
+    background: #0f294c; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #0f294c 0%, #207cca 100%, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  #0f294c 0%,#207cca 100%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  #0f294c 0%,#207cca 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f294c', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.srs-app-item-linear:hover {
+    background: #0f294c; /* Old browsers */
+    background: -moz-linear-gradient(top,  #7db9e8 0%, #207cca 100%, #0f294c 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #7db9e8 0%,#207cca 100%,#0f294c 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #7db9e8 0%,#207cca 100%,#0f294c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#0f294c',GradientType=0 ); /* IE6-9 */
+}
+
+.srs-current-app-item {
+    color: #269abc;
+    cursor: pointer;
+    /* Radial gradient */
+    background: #7db9e8; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #7db9e8 0%, #207cca 0%, #0f294c 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  #7db9e8 0%,#207cca 0%,#0f294c 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  #7db9e8 0%,#207cca 0%,#0f294c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#0f294c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.srs-current-app-item-linear {
+    /* This is a non-radial option we can use */
+    background: #0f294c; /* Old browsers */
+    background: -moz-linear-gradient(top,  #0f294c 0%, #207cca 100%, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #0f294c 0%,#207cca 100%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #0f294c 0%,#207cca 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f294c', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+
+.srs-credential-header {
+    color: white;
+    float: right;
+    padding-right: 20px;
+    padding-top: 7px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.header-help {
+    width: 200px;
+    height: 50px;
+    float: right;
+}
+
+.header-help ul {
+    list-style-type: none;
+}
+
+.help-menu {
+    color: #ffffff;
+    height: 50px;
+    padding-top: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline-block;
+}
+
+.help-menu:hover {
+    text-decoration: none;
+    background: #207cca; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #0f294c 0%, #207cca 100%, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  #0f294c 0%,#207cca 100%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  #0f294c 0%,#207cca 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f294c', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.dropdown-item:hover {
+    background-color: #207cca;
+    color: white;
+}
